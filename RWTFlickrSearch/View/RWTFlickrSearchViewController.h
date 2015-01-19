@@ -5,6 +5,10 @@
 
 @import UIKit;
 
+@class RWTFlickrSearchViewModel;
+
 @interface RWTFlickrSearchViewController : UIViewController
+
+- (instancetype)initWithViewModel:(RWTFlickrSearchViewModel *)viewModel;
 
 @end

@@ -5,6 +5,7 @@
 
 #import "RWTFlickrSearchViewController.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
+#import "RWTFlickrSearchViewModel.h"
 
 @interface RWTFlickrSearchViewController ()
 
@@ -13,17 +14,37 @@
 @property (weak, nonatomic) IBOutlet UITableView *searchHistoryTable;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *loadingIndicator;
 
+@property (weak, nonatomic) RWTFlickrSearchViewModel *viewModel;
+
+- (void)bindViewModel;
 @end
 
 @implementation RWTFlickrSearchViewController
 
-- (void)viewDidLoad {
-  [super viewDidLoad];
-  
-  self.edgesForExtendedLayout = UIRectEdgeNone;
-  
-  self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
-  
+#pragma mark - Init
+-(instancetype)initWithViewModel:(RWTFlickrSearchViewModel *)viewModel {
+    self = [self init];
+    if (self) {
+        _viewModel = viewModel;
+    }
+    return self;
 }
 
+#pragma mark - View Delegates
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
+    
+    [self bindViewModel];
+}
+
+#pragma mark - Binding
+- (void)bindViewModel {
+    self.title = self.viewModel.title;
+    
+    RAC(self.viewModel, searchText) = self.searchTextField.rac_textSignal;
+}
 @end
