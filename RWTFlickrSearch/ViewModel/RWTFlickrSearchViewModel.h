@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RWTViewModelServices.h"
 
 @class RACCommand;
 
@@ -16,4 +17,5 @@
 @property (strong, nonatomic) NSString *title;
 @property (strong, nonatomic) RACCommand *executeSearch;
 
+- (instancetype)initWithServices:(id<RWTViewModelServices>)services;
 @end

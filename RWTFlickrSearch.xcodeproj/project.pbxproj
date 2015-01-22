@@ -32,6 +32,13 @@
 		72E401BF192C050F00354806 /* RWTSearchResultsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72E401BD192C050F00354806 /* RWTSearchResultsTableViewCell.xib */; };
 		A60F282A374641B387052C92 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D8CB3F8B1184D979703C3ED /* libPods.a */; };
 		D6A669071A6D0405006D7FF4 /* RWTFlickrSearchViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A669061A6D0405006D7FF4 /* RWTFlickrSearchViewModel.m */; };
+		D6C279061A6E928300CEBBFE /* RWTFlickrSearchImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C279051A6E928300CEBBFE /* RWTFlickrSearchImpl.m */; };
+		D6C2790A1A6E944D00CEBBFE /* RWTViewModelServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C279091A6E944D00CEBBFE /* RWTViewModelServiceImpl.m */; };
+		D6C2790D1A6E966400CEBBFE /* RWTFlickrPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C2790C1A6E966400CEBBFE /* RWTFlickrPhoto.m */; };
+		D6C279101A6E96C800CEBBFE /* RWTFlickrSearchResults.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C2790F1A6E96C800CEBBFE /* RWTFlickrSearchResults.m */; };
+		D6D66D8F1A6FF3C3009B2B17 /* RWTSearchResultsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D66D8E1A6FF3C3009B2B17 /* RWTSearchResultsViewModel.m */; };
+		D6D66D921A7003B3009B2B17 /* RWTFlickrPhotoMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D66D911A7003B3009B2B17 /* RWTFlickrPhotoMetadata.m */; };
+		D6D66D951A70045C009B2B17 /* RWTSearchResultsItemViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D66D941A70045C009B2B17 /* RWTSearchResultsItemViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +90,22 @@
 		7D8CB3F8B1184D979703C3ED /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6A669051A6D0405006D7FF4 /* RWTFlickrSearchViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTFlickrSearchViewModel.h; sourceTree = "<group>"; };
 		D6A669061A6D0405006D7FF4 /* RWTFlickrSearchViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTFlickrSearchViewModel.m; sourceTree = "<group>"; };
+		D6C279031A6E923A00CEBBFE /* RWTFlickrSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTFlickrSearch.h; sourceTree = "<group>"; };
+		D6C279041A6E928300CEBBFE /* RWTFlickrSearchImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTFlickrSearchImpl.h; sourceTree = "<group>"; };
+		D6C279051A6E928300CEBBFE /* RWTFlickrSearchImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTFlickrSearchImpl.m; sourceTree = "<group>"; };
+		D6C279071A6E937700CEBBFE /* RWTViewModelServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTViewModelServices.h; sourceTree = "<group>"; };
+		D6C279081A6E944D00CEBBFE /* RWTViewModelServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTViewModelServiceImpl.h; sourceTree = "<group>"; };
+		D6C279091A6E944D00CEBBFE /* RWTViewModelServiceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTViewModelServiceImpl.m; sourceTree = "<group>"; };
+		D6C2790B1A6E966400CEBBFE /* RWTFlickrPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTFlickrPhoto.h; sourceTree = "<group>"; };
+		D6C2790C1A6E966400CEBBFE /* RWTFlickrPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTFlickrPhoto.m; sourceTree = "<group>"; };
+		D6C2790E1A6E96C800CEBBFE /* RWTFlickrSearchResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTFlickrSearchResults.h; sourceTree = "<group>"; };
+		D6C2790F1A6E96C800CEBBFE /* RWTFlickrSearchResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTFlickrSearchResults.m; sourceTree = "<group>"; };
+		D6D66D8D1A6FF3C3009B2B17 /* RWTSearchResultsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTSearchResultsViewModel.h; sourceTree = "<group>"; };
+		D6D66D8E1A6FF3C3009B2B17 /* RWTSearchResultsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTSearchResultsViewModel.m; sourceTree = "<group>"; };
+		D6D66D901A7003B3009B2B17 /* RWTFlickrPhotoMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTFlickrPhotoMetadata.h; sourceTree = "<group>"; };
+		D6D66D911A7003B3009B2B17 /* RWTFlickrPhotoMetadata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTFlickrPhotoMetadata.m; sourceTree = "<group>"; };
+		D6D66D931A70045C009B2B17 /* RWTSearchResultsItemViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTSearchResultsItemViewModel.h; sourceTree = "<group>"; };
+		D6D66D941A70045C009B2B17 /* RWTSearchResultsItemViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTSearchResultsItemViewModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +243,15 @@
 		72E401C1192C82CA00354806 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D6C279031A6E923A00CEBBFE /* RWTFlickrSearch.h */,
+				D6C279041A6E928300CEBBFE /* RWTFlickrSearchImpl.h */,
+				D6C279051A6E928300CEBBFE /* RWTFlickrSearchImpl.m */,
+				D6C2790B1A6E966400CEBBFE /* RWTFlickrPhoto.h */,
+				D6C2790C1A6E966400CEBBFE /* RWTFlickrPhoto.m */,
+				D6C2790E1A6E96C800CEBBFE /* RWTFlickrSearchResults.h */,
+				D6C2790F1A6E96C800CEBBFE /* RWTFlickrSearchResults.m */,
+				D6D66D901A7003B3009B2B17 /* RWTFlickrPhotoMetadata.h */,
+				D6D66D911A7003B3009B2B17 /* RWTFlickrPhotoMetadata.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -229,6 +261,13 @@
 			children = (
 				D6A669051A6D0405006D7FF4 /* RWTFlickrSearchViewModel.h */,
 				D6A669061A6D0405006D7FF4 /* RWTFlickrSearchViewModel.m */,
+				D6C279071A6E937700CEBBFE /* RWTViewModelServices.h */,
+				D6C279081A6E944D00CEBBFE /* RWTViewModelServiceImpl.h */,
+				D6C279091A6E944D00CEBBFE /* RWTViewModelServiceImpl.m */,
+				D6D66D8D1A6FF3C3009B2B17 /* RWTSearchResultsViewModel.h */,
+				D6D66D8E1A6FF3C3009B2B17 /* RWTSearchResultsViewModel.m */,
+				D6D66D931A70045C009B2B17 /* RWTSearchResultsItemViewModel.h */,
+				D6D66D941A70045C009B2B17 /* RWTSearchResultsItemViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -380,14 +419,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6C2790A1A6E944D00CEBBFE /* RWTViewModelServiceImpl.m in Sources */,
 				72E40180192BFFCE00354806 /* RWTAppDelegate.m in Sources */,
 				72E401BE192C050F00354806 /* RWTSearchResultsTableViewCell.m in Sources */,
 				72E401B7192C03AB00354806 /* RWTRecentSearchItemTableViewCell.m in Sources */,
 				72E4017C192BFFCE00354806 /* main.m in Sources */,
 				72E401B9192C03AB00354806 /* RWTSearchResultsViewController.m in Sources */,
+				D6D66D8F1A6FF3C3009B2B17 /* RWTSearchResultsViewModel.m in Sources */,
+				D6D66D951A70045C009B2B17 /* RWTSearchResultsItemViewModel.m in Sources */,
 				728550B5193E52740032A754 /* CETableViewBindingHelper.m in Sources */,
 				72E401B4192C03AB00354806 /* RWTFlickrSearchViewController.m in Sources */,
+				D6C279061A6E928300CEBBFE /* RWTFlickrSearchImpl.m in Sources */,
 				D6A669071A6D0405006D7FF4 /* RWTFlickrSearchViewModel.m in Sources */,
+				D6C2790D1A6E966400CEBBFE /* RWTFlickrPhoto.m in Sources */,
+				D6D66D921A7003B3009B2B17 /* RWTFlickrPhotoMetadata.m in Sources */,
+				D6C279101A6E96C800CEBBFE /* RWTFlickrSearchResults.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
